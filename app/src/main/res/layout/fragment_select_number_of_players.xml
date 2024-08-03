@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SelectNumberOfPlayersFragment"
+    android:background="@color/black_200"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/TvSelectTypeOfGame"
+        style="@style/TittleTextView"
+        android:text="Select Number Of Players"
+        app:layout_constraintBottom_toTopOf="@+id/line1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/line1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintGuide_percent=".5"
+    android:orientation="horizontal"
+    />
+
+    <Button
+        android:id="@+id/BTOnePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design_with_corner_buttons"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="One Player"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line1" />
+
+    <Button
+        android:id="@+id/BTTowPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design_with_corner_buttons"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="Tow Players"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/BTOnePlayer"
+        app:layout_constraintStart_toStartOf="@+id/BTOnePlayer"
+        app:layout_constraintTop_toBottomOf="@+id/BTOnePlayer"
+        android:layout_marginTop="16dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
